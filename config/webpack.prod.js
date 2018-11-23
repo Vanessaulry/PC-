@@ -79,15 +79,16 @@ module.exports = {
             options: {
               // 查询 jslint 配置项，请参考 http://www.jshint.com/docs/options/
               // 例如
-              camelcase: true,
+              camelcase: false,
               //jslint 的错误信息在默认情况下会显示为 warning（警告）类信息
               //将 emitErrors 参数设置为 true 可使错误显示为 error（错误）类信息
-              emitErrors: true,
+              emitErrors: false,
               //jshint 默认情况下不会打断webpack编译
               //如果你想在 jshint 出现错误时，立刻停止编译
               //请设置 failOnHint 参数为true
-              failOnHint: true,
-              esversion: 6
+              failOnHint: false,
+              esversion: 6,
+              loopfunc: true
               // 自定义报告函数
               // reporter: function(errors) { }
             }
